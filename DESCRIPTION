@@ -1,0 +1,35 @@
+Package: InnoPlexR
+Type: Package
+Title: Modelling Innovation Systems Through Multiplex Networks
+Version: 0.1.0
+Authors@R: 
+    person("Marcus", "Zabel", email = "m.t.zabel@students.nl", role = c("aut", "cre"))
+Description: Tools for constructing and analyzing multiplex networks in the
+    context of innovation systems research. Supports the integration of patent,
+    publication, and CORDIS funding data as separate network layers. Provides
+    functions for building multiplex objects from igraph layers, computing
+    supra-adjacency and supra-Laplacian matrices, and calculating multiplex
+    centrality measures including eigenvector centrality, PageRank, geodesic
+    betweenness, random-walk betweenness, and local clustering coefficients.
+    Also supports conversion to Infomap format and extraction of connected
+    components.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.3
+Imports:
+    igraph (>= 1.3.0),
+    Matrix (>= 1.5.0),
+    RSpectra (>= 0.16.0),
+    methods,
+    utils
+Suggests:
+    muxViz,
+    dplyr,
+    knitr,
+    rmarkdown
+Remotes:
+    manlius/muxViz
+URL: https://github.com/zabelmt/InnoPlexR
+BugReports: https://github.com/zabelmt/InnoPlexR/issues
